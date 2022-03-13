@@ -1,0 +1,115 @@
+<html>
+<head>
+    <title>daily feed</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #search {
+         {
+        margin-left:-10px;
+        margin-top:10px;
+  }
+
+        }
+
+        .addform {
+        border-radius:10px;
+        position:absolute;
+        top:170px;
+        left:100px;
+        border:red solid 4px;
+        }
+         nav ul li{
+        display:inline-block;
+        padding: 4px;
+        }
+        .addform:focus
+        {
+        background:yellow;
+        }
+        .feed {
+        margin-left:40px;
+        }
+        footer {
+          background:black;
+          color:white;
+          background-size:cover;
+          height:40px;
+          margin-top:190px;
+          z-index:0;
+        }
+    header {
+    background:black;
+    color:white;
+    height:40px;
+    background-size:cover;
+    }
+      #wireframe {
+        margin : 0 auto 0 auto;
+
+        }
+         @media screen and (max-width: 600px) {
+  nav ul li {
+    width:10px;
+    padding:4px;
+    list-style-type:none;
+  }
+  nav ul li #search
+  {
+  margin-top:20px;
+  }
+}
+
+    </style>
+</head>
+<body>
+<div id="wireframe">
+<header>
+    daily feeder form
+</header>
+<nav>
+    <ul>
+        <li>
+            <a href="/">feed</a>
+        </li>
+        <li>
+            <a href="/form">add log</a>
+        </li>
+          <form id="search" action="/search" method="get">
+                <input name="title" type="search">
+                <input type="submit">
+          </form>
+    </ul>
+</nav>
+<main>
+<form class="addform" action="/feed" method="post">
+    <label for="title">
+        title
+        <input id="title" type="text" name="title" placeholder="enter a title">
+
+    </label>
+    <br>
+    <label for="description">
+        description
+        <textarea name="description" id="description" placeholder="enter a description"></textarea>
+
+    </label>
+    <br>
+    <label for="tag">
+        tags
+        <input id="tag" type="text" name="tag" placeholder="enter a tag">
+
+    </label>
+    <br>
+    <input type="submit" value="add log">
+
+</form>
+
+</main>
+<footer>
+    made by austin heisley cook
+    march-11-2022
+    <a href="http://devserver:9809/athepony/dailyfeed">repo at </a>
+</footer>
+</div>
+</body>
+</html>
