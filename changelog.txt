@@ -1,0 +1,6 @@
+1.0 
+added form and list of entries - afheisleycook
+added add nav support
+1.1
+more use-friendly
+feature adda added user login  for privacy
